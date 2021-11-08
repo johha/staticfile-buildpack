@@ -15,6 +15,6 @@ pushd $BUILDPACK_DIR
   $GoInstallDir/bin/go build -mod=vendor -o $output_dir/supply ./src/staticfile/supply/cli
 popd
 
-sleep 65s
+sleep 130s
 
 $output_dir/supply "$BUILD_DIR" "$CACHE_DIR" "$DEPS_DIR" "$DEPS_IDX"
